@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameSlide</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo GameSlide">
+            <h1>GameSlide</h1>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#loja">Loja</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+            <a href="#carrinho">🛒 Carrinho</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="banner">
+            <h2>Explore o universo dos jogos!</h2>
+            <p>Ofertas exclusivas em jogos épicos.</p>
+        </section>
+
+        <section id="loja" class="produtos">
+            <h2>Jogos em destaque</h2>
+            <div class="grid-jogos">
+                <div class="jogo">
+                    <img src="jogo1.jpg" alt="Jogo 1">
+                    <h3>Idle Slayer</h3>
+                    <p>R$ 19,99</p>
+                    <button onclick="adicionarAoCarrinho('Idle Slayer', 19.99)">Adicionar ao carrinho</button>
+                </div>
+                <div class="jogo">
+                    <img src="jogo2.jpg" alt="Jogo 2">
+                    <h3>Slayer Legend</h3>
+                    <p>R$ 24,90</p>
+                    <button onclick="adicionarAoCarrinho('Slayer Legend', 24.90)">Adicionar ao carrinho</button>
+                </div>
+                <!-- Adicione mais jogos aqui -->
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre a GameSlide</h2>
+            <p>A GameSlide é uma loja virtual focada em jogos inspirados em aventuras e RPGs como Idle Slayer e Slayer Legend.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Fale Conosco</h2>
+            <p>Instagram: <a href="https://www.instagram.com/elias_sobieranski7/" target="_blank">@elias_sobieranski7</a></p>
+            <p>WhatsApp: <a href="https://wa.me/5543988633402" target="_blank">(43) 98863-3402</a></p>
+        </section>
+
+        <section id="carrinho">
+            <h2>Seu Carrinho</h2>
+            <ul id="lista-carrinho"></ul>
+            <p>Total: R$ <span id="total">0.00</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GameSlide - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
